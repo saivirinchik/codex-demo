@@ -1,0 +1,11 @@
+id,should_trigger,prompt
+review-01,true,"Use the $code-review skill to review the current git diff."
+review-02,true,"Review this pull request for correctness, security, and missing tests."
+review-03,true,"Inspect the changed FastAPI endpoint and identify production risks."
+review-04,true,"Find bugs in the files changed by the latest commit."
+review-05,true,"Review this SQL pipeline change for data-integrity issues."
+review-06,true,"Check this RAG implementation for prompt-injection and tenant-isolation risks."
+review-07,false,"Implement a new FastAPI endpoint for creating users."
+review-08,false,"Reformat this Python file using Black."
+review-09,false,"Explain what this function does."
+review-10,false,"Write unit tests for this existing function."
