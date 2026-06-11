@@ -1,12 +1,20 @@
-# AGENTS.md example
+# Repository guidance
 
-## Skills
+## Project purpose
 
-For reviews of pull requests, diffs, commits, or changed files, use the `$code-review` skill.
+This repository contains a small FastAPI invoice-calculation API used for
+demonstrating controlled AI-assisted software maintenance.
 
-## Repository-specific review rules
+## Repository structure
 
-- Treat authentication, authorization, data-loss, and PHI/PII exposure as blocking.
-- Prefer targeted tests before running the entire suite.
-- Do not modify code during a review unless explicitly asked.
-- Follow repository commands documented in `README.md` and `pyproject.toml`.
+- `app/main.py`: FastAPI endpoints
+- `app/schemas.py`: request and response models
+- `app/invoice_service.py`: invoice business logic
+- `tests/`: pytest tests
+
+## Development commands
+
+Install dependencies:
+
+```bash
+python -m pip install -r requirements.txt
